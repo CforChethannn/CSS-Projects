@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px ;
+}
+
+nav .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+nav .left img{
+    margin-right: 20px;
+}
+
+nav p{
+    font-size: 14px;
+}
+
+nav .right{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+#ic{
+    font-size: 17px;
+}
+
+.profile{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-image: url(chethu.jpg);
+    background-size: cover;
+}
+section{
+    width: 100%;
+    align-self: center;
+    position: relative;
+}
+section img{
+    width: 100%;
+}
+.content{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+button{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgb(0,92,165);
+    color: white;
+    font-weight: 700;letter-spacing: 1px;
+    border: none;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+}
+
+.conatainer3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conatainer3 .box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 20px;
+}
+.conatainer3 .box img{
+    width: 40px;    
+}
+.conatainer3 .box p{
+    color: rgb(0,92,165);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.conta4{
+    width: 100%;
+    height: 70% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 100px ;
+}
+
+.conta4 .cards{
+    height: 90%;
+    width: 23%;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.178) ;
+}
+
+.conta4 .cards img{
+    width: 100%;
+}
+.conta4 .cards .cont{
+    padding: 20px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conta4 .cards .cont .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conta4 .cards .cont .text p{
+    text-align: left;
+    line-height: 23px;
+}
+.conta4 .cards .cont h1{
+    font-weight: 500;
+    font-size: 25px;
+}
+.conta4 .cards .cont button{
+    justify-self: flex-end;
+}
+
+.conta5{
+    width: auto;
+    height: 70%;
+    margin: 50px 100px 50px 100px;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-Digital-Content-Xbox-Game-Pass-Oct25:VP5-1596x600);
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.conta5 .text3{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conta5 .text3 h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+.conta5 .text3 p{
+    line-height: 30px;
+    letter-spacing: .5px;
+}
+
+.conta6{
+    width: auto;
+    height: auto;
+    margin: 50px 100px;
+    position: relative;
+    margin-bottom: 10px ;
+
+}
+.conta6 img{
+    width: 100%;
+    display: block;
+}
+.conta6 .text6{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-25%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.conta6 .text6 h1{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.social{
+    padding-left: 100px ;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    font-weight: 100;
+}
+.social .ficons{
+    display: flex;
+    gap: 30px;
+    font-size: x-large;
+}
+
+footer{
+    height: 48%;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 40px 100px;
+    display: flex;
+    gap: 30px;
+}
+footer .foot-cards {
+    height: auto;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .foot-cards h4{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.737);
+}
+footer .foot-cards p{
+    font-size: 12px;
+    font-weight: 200;
+    color: #424242;
+}
+.last{
+    width: 100%;
+    height: 8%;
+    background-color: #F2F2F2;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-left{
+    display: flex;
+    gap: 20px;
+}
+.b-left p{
+    font-size: 12px;
+    font-weight: 200;
+    color: #424242;
+}
+.b-right{
+    display: flex;
+    gap: 20px;
+}
+.b-right p{
+    font-size: 12px;
+    font-weight: 200;
+    color: #424242;
+}
+
+nav p:hover{
+    text-decoration: underline 2px solid black;
+}
+
+.conta4 .cards,.conta6 ,nav p,.conta5,button,.conatainer3 p:hover{
+    cursor: pointer;
+}
+
