@@ -18,13 +18,13 @@
 html,body{
     height: 100%;
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 main{
     height: 100%;
     background: linear-gradient(to right, rgb(251,197,11) 58%, #faebd7 58%);
-    border-radius: 18px;
+    /* border-radius: 18px; */
     overflow: hidden;
     position: relative;
     /* background: linear-gradient(to right, red 60% ,yellow 60%); under-stand of linear gradient */
@@ -98,7 +98,7 @@ nav i{
 
 .right img{
     position: absolute;
-    top: 0%;
+    top: 18%;
     right: 15%;
     width: 600px;
     transform: rotatey(180deg) ;
