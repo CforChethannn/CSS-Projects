@@ -26,6 +26,7 @@ main{
     background: linear-gradient(to right, rgb(251,197,11) 58%, #faebd7 58%);
     border-radius: 18px;
     overflow: hidden;
+    position: relative;
     /* background: linear-gradient(to right, red 60% ,yellow 60%); under-stand of linear gradient */
 }
 main nav{
@@ -82,4 +83,54 @@ nav i{
     margin-top: 40px;
     width: 200px;
     opacity: .3;
+}
+
+
+/* .right{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    
+} */
+
+.right img{
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    width: 600px;
+    transform: rotatey(180deg) ;
+}
+
+.cur{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%,-50%);
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: none; 
+  border-radius: 50%;
+  background-color: rgb(251,197,11);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgb(133, 133, 133) ;
+}
+
+input[type="radio"]:checked {
+  width: 12px; 
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  
 }
