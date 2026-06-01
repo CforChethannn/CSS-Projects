@@ -4,6 +4,19 @@
     font-weight: normal;
     font-style:normal ;
 }
+@font-face {
+    font-family: 'fox';
+    src: url("./Faxfont Fine Regular.otf") format(opentype);
+}
+:root{
+    --orange : #f8861a;
+    --black  : #070707;
+    --ccolor : rgb(24, 24, 24);
+    --white  : #F8F5F4
+}
+i{
+    color: var(--orange);
+}
 
 *{
     margin: 0;
@@ -14,8 +27,204 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: var(--black);
+    color: var(--white);
 }
 
-h1{
+header{
+    height: 10%;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
     font-family: 'laura';
+    letter-spacing: 1.6px;
+}
+header img{
+    width: 200px;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 3%;
+}
+.top{
+    height:100%;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top .cards {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    position: relative;
+    /* background: linear-gradient(to right,rgb(37, 37, 37) ,var(--orange))  ;  looks better */
+    background-color: var(--ccolor) ;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 3px var(--orange);
+    
+}
+
+.top .cards .hgl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1.4px solid var(--orange);
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 220px;
+    color: var(--orange);
+
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+.top .cards .hgl p{
+    letter-spacing: 0px;
+}
+
+.top .cards img{
+    width: 200px;
+    height: 300px;
+    transform: rotateY(180deg);
+    filter: brightness(1.1);
+}
+ 
+.top .cards .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+.top .cards .text h1{
+    font-family: 'laura';
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.top .cards .text p{
+    color: #989898;
+    font-size: x-large;
+    font-family: 'fox';
+    letter-spacing: 0px;
+}
+
+.top .cards #dash{
+    transform: scaleX(20);
+    color: var(--orange);
+}
+.top .cards h2{
+    font-size: 30px;
+    font-family: 'fox';
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--orange);
+    
+}
+
+.main2{
+    height: 50%;
+    width: 100%;
+    padding: 0% 5%;
+    margin-bottom: 3%;
+    margin-top: 20px;
+}
+
+.bot{
+    height: 100%;
+    width: 100%;
+    background-color: var(--ccolor);
+    border-radius: 20px;
+    box-shadow: -2px -5px 3px var(--orange);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+    padding: 5%;
+}
+.bot .img-left img{
+    width: 320px;
+}
+
+.main2 .bot .right-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main2 .bot .right-text .top-text{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.main2 .bot .right-text .top-text h4{
+    font-size: larger;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: var(--orange);
+}
+.main2 .bot .right-text h1{
+    font-family: 'laura';
+    letter-spacing: 2px;
+}
+.main2 .bot .right-text h4{
+    font-family: 'fox';
+}
+.main2 .bot .right-text p{
+    font-family: 'fox';
+    font-size: large;
+    color: #989898 ;
+}
+
+
+
+.main2 .bot .right-text .btn {
+    padding: 15px 30px;
+    border: 1px solid var(--orange);
+    width: fit-content;
+    border-radius: 30px;
+    color: var(--orange);
+    
+}
+
+.main2 .bot .right-text .btn span,i {
+    margin: 0px 5px;
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'fox';
+    color: 989898 ;
+    letter-spacing: 1px;
+    box-shadow:inset 0px 2px 4px var(--orange);
+}
+
+footer nav{
+    display: flex;
+    gap: 25px;
+}
+
+
+.top .cards:hover{
+    background: linear-gradient(to right,rgb(37, 37, 37) ,var(--orange))  ; 
 }
