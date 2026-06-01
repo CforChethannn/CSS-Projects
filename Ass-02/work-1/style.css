@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'laura';
-    src: url(Fonts\Laurentian Std Regular.otf);
+    src: url("./Laurentian Std Regular.otf") format(opentype);
+    font-weight: normal;
+    font-style:normal ;
 }
 
 *{
