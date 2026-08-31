@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'sg';
+    src: url("./Game Of Squids.otf") format('opentype');
+    font-weight: normal;
+    font-style:normal ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: 'sg';
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        135deg, 
+        #4a0e17 0%,    /* Rich maroon crimson on the left */
+        #210414 40%,   /* Deep wine transition */
+        #0b020f 80%    /* Dark purple-black on the right */
+    );
+}
