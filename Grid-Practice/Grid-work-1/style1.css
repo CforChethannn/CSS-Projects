@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    padding: 10px;
+    background-color: rgb(58, 58, 58);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 1fr .75fr .25fr 1fr 1fr; */
+    grid-template-columns: 5fr 4fr 1fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 2fr 3.3fr 5.4fr;
+    gap: 5px;
+
+    grid-template-areas: 
+    "tl tc1 tc1 tc2 tr"
+    "tl mc mc mc mr"
+    "tl mc mc mc mr"
+    "bl mc mc mc br"
+    "bl bc1 bc2 bc2 br"
+    ;
+    
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 20px;
+}
+
+
+.tl{
+   grid-area: tl ;
+   background-color: aqua;
+}
+.bl{
+    grid-area: bl ;
+    background-color: rgb(229, 255, 0);
+
+}
+.tc1{
+    grid-area: tc1 ;
+    background-color: rgb(183, 197, 133);
+    
+}
+.tc2{
+    grid-area: tc2 ;
+    background-color: rgb(211, 158, 25);
+}
+.mc{
+    grid-area: mc ;
+    background-color: rgb(147, 0, 128);
+}
+.bc1{
+    grid-area: bc1 ;
+    background-color: rgb(212, 87, 148);
+}
+.bc2{
+    grid-area: bc2 ;
+    background-color: rgb(166, 193, 45);
+}
+
+.tr{
+    grid-area: tr ;
+    background-color: rgb(70, 131, 78);
+}
+.mr{
+    grid-area: mr ;
+    background-color: rgb(40, 227, 59);
+}
+.br{
+    grid-area: br ;
+    background-color: rgb(119, 146, 146);
+}
