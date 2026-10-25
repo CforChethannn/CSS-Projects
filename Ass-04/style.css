@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "fix";
+    src: url("./assets/fonts/Fixture-ExpandedRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: port;
+    src: url(./assets/fonts/Lytiga\ W01\ Extended\ SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: klik;
+    src: url(./assets/fonts/Klik-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: astro;
+    src: url(./assets/fonts/Astronomus.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #c2c2c2;
+    display: flex;
+    padding: 2% ;
+    gap: 20px;
+    font-family: "fix";
+}
+.main .left{
+    height: 100%;
+    width: 45%;
+    display: grid;
+    /* grid-template-columns: .5fr 5fr; */
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.nav-left{
+    background-color: #d8d8d8;
+    position: relative;
+    border-radius: 20px;
+    
+}
+.nav-left ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top:58%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-90deg) ;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.nav-left ul li{
+    margin: 0 20px;
+    
+}
+
+#animate{
+    transition-property:all ;
+    transition-duration: .2s;
+    transition-delay: 0 ;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-left ul li:hover{
+    transform: scale(1.1);
+
+}
+/* ------------------nav done  */
+
+
+.profile{
+    position: relative;
+    background-image: url(./assets/image/Vector\ 2.png);
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* padding: 40px; */
+
+}
+.profile .top-text-left{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+}
+.profile .top-text-left i{
+    font-size: 25px;
+}
+
+
+
+.profile .user{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    right: 3% ;
+}
+.profile .left-text-profile{
+    position: absolute;
+    bottom: 2%;
+    left: 3% ;
+    font-size: 90px;
+    line-height: 80px;
+    color: white;
+    font-family: "fix";
+}
+
+.profile .left-text-profile p{
+    font-size: 60px;
+    font-family: "klik";
+    font-weight: 100;
+}
+span{
+    display: block;
+    font-weight: 500;
+    margin-left: 15px ;
+}
+
+.profile .left-text-profile .mail{
+    margin-left: 24px ;
+    font-size: 20px;
+    opacity: .6;
+    letter-spacing: 3px;
+    text-decoration: underline dashed white 2px;} 
+
+.profile .logo{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom:1%;
+    left: 55%;
+    transition: all 5s ease;
+    /* transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease; */
+}
+
+.profile .logo:hover{
+    transform: rotateZ(360deg);
+}
+
+
+
+
+.main .right{
+    height: 100%;
+    width: 55%;
+    /* background-color: goldenrod; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2.5fr 5fr 2.5fr;
+
+    grid-template-areas: "top-text top-text top-text"
+                          "midleft midleft midright"  
+                          "btm-left btm-right btm-right" ;
+    gap: 20px;
+}
+
+.top-text{
+    grid-area: top-text;
+    background-color: #dfc8a5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.top-text h1{
+    position: absolute;
+    font-weight: 900;
+    font-size: 135px;
+    font-family: "astro";
+    margin: 0;
+    padding: 0;
+    text-decoration: line-through;
+
+}
+.midleft{
+    grid-area: midleft;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.midleft img{
+    position: absolute;
+    top: -55px;
+    left: -100px;
+    transform: scale(.8);
+}
+.midright{
+    grid-area: midright;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.midright .rt{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A9DAD7;
+}
+.midright .rb{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E70BC;
+}
+.head{
+    font-family: "fix";
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+.para{
+    font-family: "klik";
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.btm-left{
+    grid-area: btm-left;
+    background-color: #595959;
+    color: #FCF5F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.btm-left i{
+    font-size: 50px;
+    font-weight: 900;
+}
+.btm-right{
+    grid-area: btm-right;
+    border-radius: 20px;
+    overflow: hidden;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btm-right .b1{
+    height: 100%;
+    width: 55%;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+}
+.btm-right .b1 img{
+    width: 200px;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+}
+.btm-right .b2{
+        height: 100%;
+        width: 55%;
+        position: absolute;
+        left: 45%;
+        background-color: #FFC267;
+        border-radius: 20px;
+        text-align: center;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+#btm{
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
